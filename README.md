@@ -1,38 +1,7 @@
 # Hack0
-ajgaldhd;v
-ef]akjd; ajfhlua fv ulduvfivfvs
-tb
-sn
- 
- hmi
-  ne
-    rg
-     
-      s
-       t
-       j
-        gs
-        yjd
-         
-         dh
-         
-         
-         
-         s
-         h
-         st
-         g
-         
-         
-         st 
-         g 
-         
-         h
-         sg
-         s
-         g
-         
-         
-         g
-         st
-         gr
+В общем-то,ничего не понятно
+НО мы пытаемя как-то что-то сделать
+Что?
+также не понятно
+тренируемся в git и visual code
+
