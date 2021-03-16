@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
     <title>Наш Банк</title>
+
 </head>
 
 <body>
@@ -40,7 +42,7 @@
         </div>
         <div>
             <label class="flabel">Запрашиваемая сумма</label>
-            <input type="text" name="fsum">
+            <input type="text" name="floan_amount">
             <div class="creditCalc_small_select">
                 <select name="valuteSum" class="fselect">
                     <option value="RUB">руб.</option>
@@ -51,13 +53,9 @@
         </div>
         <div>
             <label class="flabel">Срок кредита</label>
-            <input name="fsrok" required="required" validate-min="1" class="finput">
+            <input name="floan_term" required="required" validate-min="1" class="finput">
             <div class="creditCalc_small_select">
-                <select name="SrokCred" class="fselect">
-                    <option value="days">день</option>
-                    <option value="months">месяц</option>
-                    <option value="years">год</option>
-                </select>
+                <label class="loan_term">Месяц</label>
             </div></div>
         </div>
         <div>
@@ -79,6 +77,29 @@
             <input type="submit" value="Submit">
         </div>
     </form>
+    <script>
+        function validateForm () {
+            var loan_amount = document.forms["myForm"]["floan_amount"].value;
+            var loan_term = document.forms["myForm"]["floan_term"].value;
+
+
+            if (loan_amount == "" || loan_term == "") {
+                alert ("Введите информацию");
+                return false;
+            } 
+            if (!(loan_amount == "" && loan_amount == "")) {
+                
+                var monthly_interest_rate = (20 / 100) / 12;
+                var degr = Math.pow( 1 + ((20 / 100) / 12), Number(loan_term) * 12 );
+                var monthly_payment = Number(loan_amount) * (monthly_interest_rate + monthly_interest_rate/(degr - 1));
+                
+
+                alert ("Ваш ежемесячный платёж = " + monthly_payment);
+                return false;
+            }
+        
+        }
+</script>
 </div>
 </body>
 
