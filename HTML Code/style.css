@@ -83,12 +83,12 @@ body {
     height: 40px;
     color: #373737;
     margin-bottom: 1mm;
-    float:right;
+    
 }
-.creditCalc_small_select {
+.varlist {
     width: 140px;
     
-    float: right;
+    
 }
 .cinput {
     display: block;
@@ -102,8 +102,8 @@ body {
 
 }
 .fbutton {
-    background: #00ff6a;
-    color: #182547;
+    background: #0d0e0d;
+    color: #ffffff;
     border-radius: 1cm;
     font-family: 'Lato', sans-serif;
     height: 60px;
