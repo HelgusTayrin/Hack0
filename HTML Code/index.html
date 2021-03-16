@@ -4,48 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Проект для хакатона</title>
 </head>
 
 <body>
     <form name = "myForm" action = "" onsubmit = "return validateForm()" method = "post">
-        Ваше имя: <input type = "text" name = "fname">
-        <br/><br/>
-        Ваша фамилия: <input type = "text" name = "fsurname">
-        <br/><br/>
-        Ваш адрес проживания: <input type = "text" name = "fadres">
-        <br/><br/>
-        Ваш номер телефона: <input type = "text" name = "ftel">
-        <br/><br/>
-        Ваш адрес почты: <input type = "text" name = "ftel">
-        <br/><br/>
-        Серия: <input type = "text" name = "fseria">  
-        Номер пасспорта: <input type = "text" name = "ftel">
-        <br/><br/>
-        Цель кредита: <input type = "text" name = "fnomer">
-        <br/><br/>
-        Запрашиваемая сумма: <input type = "text" name = "fsum">
-            <select name="valuteSum">
-              <option value="RUB">руб.</option>
-              <option value="DOL">$</option>
-              <option value="EUR">€</option>
-            </select>
-        <br/><br/>
-        Срок кредита: <input type = "text" name = "fsrok">
-            <select name="typeSrok">
-             <option value="Year">Год</option>
-             <option value="Mounth">Месяц</option>
-            
+        
+       <div>
+        <label class="fc-label">ФИО:</label> 
+        <input type = "text" name = "fname">
+       </div>
+      
+       <div>
+        <label class="fc-label">Ваш адрес проживания:</label> 
+        <input type = "text" name = "fadres">
+       </div>
+
+       <div>
+        <label class="fc-label">Ваш телефон</label> 
+        <input type = "text" name = "ftel">
+       </div>
+
+       <div>
+        <label class="fc-label">Документ, подтверждающий личность</label> 
+        <input type = "text" name = "fdoc">
+       </div>
+       <div>
+        <label class="fc-label">Номер документа</label> 
+        <input type = "text" name = "fnomer">
+       </div>
+       <div>
+        <label class="fc-label">Запрашиваемая сумма</label> 
+        <input type = "text" name = "fsum">
+        <select name="valuteSum" class="fc-select">
+            <option value="RUB">руб.</option>
+            <option value="DOL">$</option>
+            <option value="EUR">€</option>
           </select>
-            <br/><br/>
-        Ваш ежемесячный доход: <input type = "text" name = "fdohod"> 
-            <select name="valuteDohod">
-                 <option value="RUB">руб.</option>
-                <option value="DOL">$</option>
-                <option value="EUR">€</option>
-            </select>
-        <br/><br/>
+       </div>
+       <div>
+        <label class="fc-label">Срок кредита</label> 
+        <input type = "text" name = "fsrok">
+        <select name="typeSrok" class="fc-select">
+            <option value="Year">Год</option>
+            <option value="Mounth">Месяц</option>
+         </select>
+       </div>
+       <div>
+        <label class="fc-label">Цель кредита</label> 
+        <input type = "text" name = "ftarget">
+       </div>
+       <div>
+        <label class="fc-label">Ваш ежемесячный доход</label> 
+        <input type = "text" name = "fdohod">
+        <select name="valuteDohod" class="fc-select">
+            <option value="RUB">руб.</option>
+            <option value="DOL">$</option>
+            <option value="EUR">€</option>
+       </select>
+       </div>
+        <div>
         <input type = "submit" value = "Submit">
+        </div>
     </form>
     
 </body>

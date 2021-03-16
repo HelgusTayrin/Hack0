@@ -1,0 +1,79 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    color: #000000;
+}
+
+div {
+    text-rendering: auto;
+    color: -internal-light-dark(rgb(252, 0, 0), white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: scenter;
+    appearance: menulist;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    cursor: default;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+   
+}
+
+select {
+   
+    text-rendering: auto;
+    color: -internal-light-dark(rgb(252, 0, 0), white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    cursor: default;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+.fc-select {
+    font-size: 22px;
+    height: 42px;
+    padding: 0 32px 0 16px;
+
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #FFFFFF center right no-repeat;
+    border-radius: 4px;
+    display: block;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    width: 100%;
+}
+.fc-label {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 0 0 10px 0;
+    min-height: 20px;
+    position: relative;
+    width: 100%;
+}
