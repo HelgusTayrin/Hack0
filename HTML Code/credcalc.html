@@ -77,18 +77,19 @@
                         var monthly_payment = Number(loan_amount) * (monthly_interest_rate + monthly_interest_rate/(degr - 1));
                         
                         if (loan_amount == "" || loan_term == "" || month_zp == "") {
-                            alert ("You must put your information");
+                            alert ("Вы должны ввести данные.");
                             return false;
                         }
 
-                        if ( (Number(month_zp) > Number(monthly_payment)) && !(loan_amount == "" && loan_amount == "")) {
-                            alert ("Ваш ежемесячный платёж = " + monthly_payment);
+                        if ( ((Number(month_zp) * 0.3) > Number(monthly_payment)) && !(loan_amount == "" && loan_amount == "")) {
+                            alert ("Вам одобрен кредит \n" + "Ваш ежемесячный платёж = " + monthly_payment);
                             return false;
-                            window.location.href = "Yes.html";  
+                              
                         }
                         
-                        if ( Number(month_zp) < Number(monthly_payment)) {
-                            window.location.href = "No.html";
+                        if ( (Number(month_zp)* 0.3) < Number(monthly_payment) ) {
+                            alert ("Кредит не одобрен");
+                            return false;
                         }
                 
                     }
