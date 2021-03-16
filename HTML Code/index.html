@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Авторизация</title>
+
+</head>
+
+<body>
+    <table width="100%" cellpadding="5">
+        <tr>
+            <td>
+                <div>
+                    <img src="images\bankico.png" style="float:none" width="200px" alt="bankico">
+                    <h1 style="padding-bottom: 2em">Наш Банк</h1>
+
+
+
+                </div>
+
+                <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+
+                    <div>
+                        <label class="flabel">ФИО:</label>
+                        <input class="finput" type="text" name="fname">
+                    </div>
+
+                    <div>
+                        <label class="flabel">Ваш адрес проживания:</label>
+                        <input class="finput" type="text" name="fadres">
+                    </div>
+                    <div>
+                        <label class="flabel">Ваш телефон</label>
+                        <input class="finput" type="text" name="ftel">
+                    </div>
+
+
+                    <div>
+                        <label class="flabel">Серия и номер паспорта</label>
+                        <input class="finput" type="text" name="fnomer">
+                    </div>
+
+                </form>
+
+
+
+                <div class="fcheckbox">
+                    <input type="checkbox">
+                    <label class="fcheckbox_label">
+                        Согласие с <a href="">Обработкой персональных данных</a>
+                    </label>
+                </div>
+
+
+                <form action="credcalc.html">
+                    <button name="next" class="fbutton">Далее</button>
+                </form>
+
+
+
+
+
+                </div>
+            </td>
+            <td>
+                <h1 style="text-align: center;">Здравствуйте! </h1>
+                <h3 style="text-align: center;">Пройдите авторизацию для того, </br> чтобы пользоваться нашими услугами
+                </h3>
+                <img src="images\bank2.png" width="1000" alt="bankico">
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

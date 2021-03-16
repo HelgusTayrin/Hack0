@@ -1,0 +1,86 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 7em;
+    background: linear-gradient(#d92efc, #15dcff) fixed;
+}
+
+
+.fselect {
+    font-size: 18px;
+    height: 40px;
+    text-align: center;
+    background: #ffffff center right no-repeat;
+    border-radius: 1cm;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    width: 100%;
+}
+.foption{
+    text-align: center;
+}
+.flabel {
+    display: block;
+    font-size: 26px;
+    font-weight: 700;
+    height: 20px;
+    float: left;
+    width: 100%;
+    padding-bottom: 1cm;
+}
+
+.finput {
+    display: block;
+    border: 1px solid #DDDDDD;
+    border-radius: 1cm;
+    width: 600px;
+    height: 40px;
+    color: #373737;
+    margin-bottom: 1mm;
+    
+}
+.varlist {
+    width: 140px;
+    
+    
+}
+.cinput {
+    display: block;
+    border: 1px solid #DDDDDD;
+    border-radius: 1cm;
+    width:500px;
+    height: 40px;
+    color: #373737;
+    position: absolute;
+    bottom: 0.0006cm;
+
+}
+.fbutton {
+    background: #0d0e0d;
+    color: #ffffff;
+    border-radius: 1cm;
+    font-family: 'Lato', sans-serif;
+    height: 60px;
+    width: 300px;
+    font-size: 30px;
+}
+.divbutt {
+    padding: 20px;
+}
+
+
+.fcheckbox {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    margin-top: 28px;
+}
+
+
+.fcheckbox_label {
+    color: #0c0909;
+}
+
+p {
+font-size: 20px;
+}
