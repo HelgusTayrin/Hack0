@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
-
-    <title>Наш Банк</title>
-
+    <title>Кредитный калькулятор</title>
 </head>
 
 <body>
@@ -18,32 +16,14 @@
                 <div>
                     <img src="images\bankico.png" style="float:none" width="200px" alt="bankico">
                     <h1 style="padding-bottom: 5em">Наш Банк</h1>
+
                     <form action="index.html">
-                        <button>Выйти</button>
-                       </form>
+                        <button class="fbutton">Выйти</button>
+                    </form>
+
                 </div>
 
                 <form name="myForm" action="" onsubmit="return validateForm()" method="post">
-
-                    <div>
-                        <label class="flabel">ФИО:</label>
-                        <input class="finput" type="text" name="fname">
-                    </div>
-
-                    <div>
-                        <label class="flabel">Ваш адрес проживания:</label>
-                        <input class="finput" type="text" name="fadres">
-                    </div>
-                    <div>
-                        <label class="flabel">Ваш телефон</label>
-                        <input class="finput" type="text" name="ftel">
-                    </div>
-
-
-                    <div>
-                        <label class="flabel">Серия и номер паспорта</label>
-                        <input class="finput" type="text" name="fnomer">
-                    </div>
                     <div>
                         <label class="flabel">Запрашиваемая сумма</label>
                         <input class="finput" type="text" name="floan_amount">
@@ -85,7 +65,7 @@
                     </label>
                 </div>
                 <div class="divbutt">
-                    <button type="submit" class="fbutton">РАССЧИТАТЬ</button>
+                    <button name="butt" type="submit" class="fbutton">РАССЧИТАТЬ</button>
                 </div>
 
 
@@ -103,6 +83,7 @@
             </td>
         </tr>
     </table>
+
 
 </body>
 
