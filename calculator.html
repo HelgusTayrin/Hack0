@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
+	<meta http-equiv = "X-UA-Compatible" content = "ie=edge"/>
+    <title>Шаблона расчёта кредита</title>
+</head>
+<body>
+
+    <form name = "myForm" action = "" onsubmit = "return validateForm()" method = "post">
+        Сумма кредита: <input type = "text" name = "floan_amount">
+        <br></br>
+        Скрок кредита: <input type = "text" name = "floan_term">
+        <br></br>
+        <input type = "submit" value = "Submit">
+    </form>
+
+    <script>
+        function validateForm () {
+            var loan_amount = document.forms["myForm"]["floan_amount"].value;
+            var loan_term = document.forms["myForm"]["floan_term"].value;
+
+
+            if (loan_amount == "" || loan_term == "") {
+                alert ("You must put your information");
+                return false;
+            } 
+            if (!(loan_amount == "" && loan_amount == "")) {
+                
+                var monthly_interest_rate = (20 / 100) / 12;
+                var degr = Math.pow( 1 + ((20 / 100) / 12), Number(loan_term) * 12 );
+                var monthly_payment = Number(loan_amount) * (monthly_interest_rate + monthly_interest_rate/(degr - 1));
+                
+
+                alert ("Ваш ежемесячный платёж = " + monthly_payment);
+                return false;
+            }
+        
+        }
+</script>
+</body>
+</html>
