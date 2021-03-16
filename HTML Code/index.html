@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="script.js"></script>
-    <title>Наш Банк</title>
-
+    <title>Авторизация</title>
 </head>
 
 <body>
@@ -37,88 +35,26 @@
                         <input class="finput" type="text" name="ftel">
                     </div>
 
-                    
+
                     <div>
-                        <label class="flabel">Серия и номер паспорта</label>
+                        <label class="flabel">Ваш имейл</label>
                         <input class="finput" type="text" name="fnomer">
                     </div>
-                    <div>
-                        <label class="flabel">Запрашиваемая сумма</label>
-                        <input class="finput" type="text" name="floan_amount">
-                        <div class="varlist">
-                            <select name="valuteSum" class="fselect">
-                                <option value="RUB" class="text-align: center">руб.</option>
-                                <option value="DOL" class="text-align: center">$</option>
-                                <option value="EUR" class="text-align: center">€</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div>
-                        <label class="flabel">Срок кредита в месяцах</label>
-                        <input class="finput" name="floan_term" required="required" validate-min="1" class="finput">
-
-                    </div>
-                    </div>
-                    <div>
-                        <label class="flabel">Цель кредита</label>
-                        <input class="finput" type="text" name="ftarget">
-                    </div>
-                    <div>
-                        <label class="flabel">Ваш ежемесячный доход</label>
-                        <input class="finput" type="text" name="fdohod">
-                        <div class="varlist">
-                            <select name="valuteDohod" class="fselect">
-                                <option value="RUB">руб.</option>
-                                <option value="DOL">$</option>
-                                <option value="EUR">€</option>
-                            </select>
-                        </div>
-                    </div>
-
-                </form>
-                <div class="fcheckbox">
-                    <input type="checkbox" >
-                    <label class="fcheckbox_label">
-                        Согласие с <a href="">Обработкой персональных данных</a>
-                    </label>
-                </div>
-                <div class="divbutt">
-                    <button type="submit" class="fbutton">РАССЧИТАТЬ</button>
-                </div>
+                   
+                    <div class="divbutt">
+                        <form action="creditCalc.html">
+                            <button class="fbutton">Далее</button>
+                           </form>
 
 
 
-
-
-                <script>
-                    function validateForm() {
-                        var loan_amount = document.forms["myForm"]["floan_amount"].value;
-                        var loan_term = document.forms["myForm"]["floan_term"].value;
-
-
-                        if (loan_amount == "" || loan_term == "") {
-                            alert("Введите информацию");
-                            return false;
-                        }
-                        if (!(loan_amount == "" && loan_amount == "")) {
-
-                            var monthly_interest_rate = (20 / 100) / 12;
-                            var degr = Math.pow(1 + ((20 / 100) / 12), Number(loan_term) * 12);
-                            var monthly_payment = Number(loan_amount) * (monthly_interest_rate + monthly_interest_rate / (degr - 1));
-
-
-                            alert("Ваш ежемесячный платёж = " + monthly_payment);
-                            return false;
-                        }
-
-                    }
-                </script>
+             
                 </div>
             </td>
             <td>
-                <h1 style="text-align: center;">Оформить заявку на кредит</h1>
-                <h3 style="text-align: center;">Самостоятельно сравните между собой кредиты </br> с разными комиссиоными сборами</h3>
-                <img src="images\bank1.png" width="1000" alt="bankico">
+                <h1 style="text-align: center;">Здравствуйте!</h1>
+                <h3 style="text-align: center;">Пройдите авторизацию для дальнейшего </br> использования услуг</h3>
+                <img src="images\bank2.png" width="1000" alt="bankico">
             </td>
         </tr>
     </table>
