@@ -23,7 +23,7 @@ body {
    
 }
 
-select {
+.dselect {
    
     text-rendering: auto;
     color: -internal-light-dark(#f7ff83, white);
@@ -52,35 +52,51 @@ select {
 
 .fselect {
     font-size: 18px;
-    height: 30px;
-    padding: 0 32px 0 16px;
-
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    background: #f7ff83 center right no-repeat;
-    border-radius: 4px;
-    display: block;
+    height: 40px;
+    text-align: center;
+    background: #ffffff center right no-repeat;
+    border-radius: 1cm;
     font-family: 'PT Sans', sans-serif;
     margin: 0;
     width: 100%;
 }
+.foption{
+    text-align: center;
+}
 .flabel {
     display: block;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 700;
-    line-height: 20px;
-    margin: 0 0 10px 0;
-    min-height: 20px;
-    position: relative;
+    
+    
+    height: 20px;
+    float: left;
     width: 100%;
+    padding-bottom: 1cm;
 }
 
 .creditCalc_small_select {
     width: 140px;
+    
+    float: right;
 }
 
 .finput {
+    display: block;
     border: 1px solid #DDDDDD;
+    border-radius: 1cm;
+    width: 1000px;
+    height: 40px;
     color: #373737;
+    margin-bottom: 1mm;
+    float:right;
+}
+.cinput {
+    display: block;
+    border: 1px solid #DDDDDD;
+    border-radius: 1cm;
+    width:500px;
+    height: 40px;
+    color: #373737;
+    margin-top: 100cm;
 }

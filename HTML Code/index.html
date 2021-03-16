@@ -12,95 +12,103 @@
 </head>
 
 <body>
-    <div>
-        <img src="images\bankico.png" width="100px" alt="bankico"> <h1>Наш Банк</h1>
-    </div>
-    <form name="myForm" action="" onsubmit="return validateForm()" method="post">
-
-        <div>
-            <label class="flabel">ФИО:</label>
-            <input type="text" name="fname">
+    <table width="100%" cellpadding="5">
+        <tr>
+         <td> <div>
+            <img src="images\bankico.png" style="float:none" width="200px" alt="bankico">
+            <h1 style="padding-bottom: 5em">Наш Банк</h1>
+            
         </div>
-
-        <div>
-            <label class="flabel">Ваш адрес проживания:</label>
-            <input type="text" name="fadres">
-        </div>
-
-        <div>
-            <label class="flabel">Ваш телефон</label>
-            <input type="text" name="ftel">
-        </div>
-
-        <div>
-            <label class="flabel">Документ, подтверждающий личность</label>
-            <input type="text" name="fdoc">
-        </div>
-        <div>
-            <label class="flabel">Номер документа</label>
-            <input type="text" name="fnomer">
-        </div>
-        <div>
-            <label class="flabel">Запрашиваемая сумма</label>
-            <input type="text" name="floan_amount">
-            <div class="creditCalc_small_select">
-                <select name="valuteSum" class="fselect">
-                    <option value="RUB">руб.</option>
-                    <option value="DOL">$</option>
-                    <option value="EUR">€</option>
-                </select>
-            </div>
-        </div>
-        <div>
-            <label class="flabel">Срок кредита</label>
-            <input name="floan_term" required="required" validate-min="1" class="finput">
-            <div class="creditCalc_small_select">
-                <label class="loan_term">Месяц</label>
-            </div></div>
-        </div>
-        <div>
-            <label class="flabel">Цель кредита</label>
-            <input type="text" name="ftarget">
-        </div>
-        <div>
-            <label class="flabel">Ваш ежемесячный доход</label>
-            <input type="text" name="fdohod">
-            <div class="creditCalc_small_select">
-                <select name="valuteDohod" class="fselect">
-                    <option value="RUB">руб.</option>
-                    <option value="DOL">$</option>
-                    <option value="EUR">€</option>
-                </select>
-            </div>
-        </div>
-        <div>
-            <input type="submit" value="Submit">
-        </div>
-    </form>
-    <script>
-        function validateForm () {
-            var loan_amount = document.forms["myForm"]["floan_amount"].value;
-            var loan_term = document.forms["myForm"]["floan_term"].value;
-
-
-            if (loan_amount == "" || loan_term == "") {
-                alert ("Введите информацию");
-                return false;
-            } 
-            if (!(loan_amount == "" && loan_amount == "")) {
-                
-                var monthly_interest_rate = (20 / 100) / 12;
-                var degr = Math.pow( 1 + ((20 / 100) / 12), Number(loan_term) * 12 );
-                var monthly_payment = Number(loan_amount) * (monthly_interest_rate + monthly_interest_rate/(degr - 1));
-                
-
-                alert ("Ваш ежемесячный платёж = " + monthly_payment);
-                return false;
-            }
         
-        }
-</script>
-</div>
+        <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+    
+            <div>
+                <label class="flabel">ФИО:</label>
+                <input class="finput" type="text" name="fname">
+            </div>
+    
+            <div>
+                <label class="flabel">Ваш адрес проживания:</label>
+                <input class="finput" type="text" name="fadres">
+            </div>
+            <div>
+                <label class="flabel">Ваш телефон</label>
+                <input class="finput" type="text" name="ftel">
+            </div>
+    
+            <div>
+                <label class="flabel">Документ, подтверждающий личность</label>
+                <input class="finput" type="text" name="fdoc">
+            </div>
+            <div>
+                <label class="flabel">Номер документа</label>
+                <input class="finput" type="text" name="fnomer">
+            </div>
+            <div>
+                <label class="flabel">Запрашиваемая сумма</label>
+                <input class="finput" type="text" name="floan_amount">
+                <div class="creditCalc_small_select">
+                    <select name="valuteSum" class="fselect">
+                        <option value="RUB" class="text-align: center">руб.</option>
+                        <option value="DOL" class="text-align: center">$</option>
+                        <option value="EUR" class="text-align: center">€</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label class="flabel">Срок кредита</label>
+                <input class="finput" name="floan_term" required="required" validate-min="1" class="finput class="finput"">
+                <label class="flabel">Месяц</label>
+            </div>
+            </div>
+            <div>
+                <label class="flabel">Цель кредита</label>
+                <input class="finput" type="text" name="ftarget">
+            </div>
+            <div>
+                <label class="flabel">Ваш ежемесячный доход</label>
+                <input class="finput" type="text" name="fdohod">
+                <div class="creditCalc_small_select">
+                    <select name="valuteDohod" class="fselect">
+                        <option value="RUB">руб.</option>
+                        <option value="DOL">$</option>
+                        <option value="EUR">€</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <input class="cinput" type="submit" value="Submit">
+            </div>
+        </form>
+        <script>
+            function validateForm() {
+                var loan_amount = document.forms["myForm"]["floan_amount"].value;
+                var loan_term = document.forms["myForm"]["floan_term"].value;
+    
+    
+                if (loan_amount == "" || loan_term == "") {
+                    alert("Введите информацию");
+                    return false;
+                }
+                if (!(loan_amount == "" && loan_amount == "")) {
+    
+                    var monthly_interest_rate = (20 / 100) / 12;
+                    var degr = Math.pow(1 + ((20 / 100) / 12), Number(loan_term) * 12);
+                    var monthly_payment = Number(loan_amount) * (monthly_interest_rate + monthly_interest_rate / (degr - 1));
+    
+    
+                    alert("Ваш ежемесячный платёж = " + monthly_payment);
+                    return false;
+                }
+    
+            }
+        </script>
+        </div>
+     </td>
+         <td valign="top" width="25%" bgcolor="#ffcc00">Колонка 2</td>
+        </tr>
+       </table> 
+   
 </body>
 
 </html>
