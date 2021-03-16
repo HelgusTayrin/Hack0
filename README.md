@@ -2,6 +2,4 @@
 
 Проект хакатон
 
-;llvsflkbsfkb
-d
-fzdgfgdfgzfdgzfgz
+Пурупуру
