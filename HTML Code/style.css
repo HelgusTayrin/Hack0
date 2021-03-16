@@ -1,6 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
-    margin: 0;
+    margin: 7em;
     background: linear-gradient(#d92efc, #15dcff) fixed;
 }
 
@@ -18,8 +18,8 @@ body {
     white-space: pre;
     -webkit-rtl-ordering: logical;
     cursor: default;
-    margin: 0em;
-    font: 400 1px Arial;
+    margin: 1em;
+    font: 400 10px Arial;
    
 }
 
