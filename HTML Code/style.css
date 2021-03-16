@@ -65,31 +65,30 @@ body {
 }
 .flabel {
     display: block;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 700;
-    
-    
     height: 20px;
     float: left;
     width: 100%;
     padding-bottom: 1cm;
 }
 
-.creditCalc_small_select {
-    width: 140px;
-    
-    float: right;
-}
+
 
 .finput {
     display: block;
     border: 1px solid #DDDDDD;
     border-radius: 1cm;
-    width: 1000px;
+    width: 600px;
     height: 40px;
     color: #373737;
     margin-bottom: 1mm;
     float:right;
+}
+.creditCalc_small_select {
+    width: 140px;
+    
+    float: right;
 }
 .cinput {
     display: block;
@@ -98,5 +97,33 @@ body {
     width:500px;
     height: 40px;
     color: #373737;
-    margin-top: 100cm;
+    position: absolute;
+    bottom: 0.0006cm;
+
+}
+.fbutton {
+    background: #00ff6a;
+    color: #182547;
+    border-radius: 1cm;
+    font-family: 'Lato', sans-serif;
+    height: 60px;
+    width: 300px;
+    font-size: 30px;
+}
+.divbutt {
+    padding: 20px;
+}
+
+
+.fcheckbox {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    margin-top: 28px;
+}
+
+
+.fcheckbox_label {
+    color: #0c0909;
 }
